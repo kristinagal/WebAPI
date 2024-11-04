@@ -1,0 +1,6 @@
+@P099_DTO_HostAddress = http://localhost:5259
+
+GET {{P099_DTO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
