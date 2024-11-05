@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_IntroToApi2", "..\P02_I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P099_DTO", "P099_DTO\P099_DTO.csproj", "{468F87D5-7AB0-42F0-BC54-7D169CC1CC81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P099_File", "P099_File\P099_File.csproj", "{4FDFA207-63E2-4BA7-A860-00E90F40B373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P100_ResponseTypes", "P100_ResponseTypes\P100_ResponseTypes.csproj", "{77078B86-E0EF-44FB-A6FA-5BFB359FED9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{468F87D5-7AB0-42F0-BC54-7D169CC1CC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468F87D5-7AB0-42F0-BC54-7D169CC1CC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468F87D5-7AB0-42F0-BC54-7D169CC1CC81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDFA207-63E2-4BA7-A860-00E90F40B373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDFA207-63E2-4BA7-A860-00E90F40B373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDFA207-63E2-4BA7-A860-00E90F40B373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDFA207-63E2-4BA7-A860-00E90F40B373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77078B86-E0EF-44FB-A6FA-5BFB359FED9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77078B86-E0EF-44FB-A6FA-5BFB359FED9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77078B86-E0EF-44FB-A6FA-5BFB359FED9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77078B86-E0EF-44FB-A6FA-5BFB359FED9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
