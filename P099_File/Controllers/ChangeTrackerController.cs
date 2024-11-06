@@ -23,10 +23,6 @@ namespace P099_File.Controllers
         // GET: grąžina visus stebimus pakeitimus (naudoti uzklausos DTO)
         {
             var changes = _changeTracker.GetChanges();
-            if (changes == null || !changes.Any())
-            {
-                return NotFound("No changes found.");
-            }
 
             var result = _mapper.Map(changes);
             return Ok(result);
