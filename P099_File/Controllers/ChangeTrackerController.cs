@@ -30,7 +30,6 @@ namespace P099_File.Controllers
 
         [HttpGet("{id}")]
         public ActionResult<ChangeRecordDto> GetChangeById([FromRoute] long id)
-        // GET: grąžina pakeitimą pagal identifikatorių. Parametras gaunamas per route. (uzklausos DTO)
         {
             var change = _changeTracker.GetChangeById(id);
             if (change == null)

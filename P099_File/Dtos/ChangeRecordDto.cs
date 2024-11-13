@@ -5,10 +5,10 @@ namespace P099_File.Dtos
     public class ChangeRecordDto
     {
         public long Id { get; set; }
-        public string EntityName { get; set; }
+        public required string EntityName { get; set; } 
         public ChangeType ChangeType { get; set; }
-        public string OldValue { get; set; }
-        public string NewValue { get; set; }
+        public string? OldValue { get; set; }
+        public string? NewValue { get; set; }
         public DateTime ChangeTime { get; set; }
     }
 }
