@@ -43,8 +43,11 @@ namespace P103_ExternalApi.Controllers
         {
             var apiRequest = _mapper.Map(req);
             var id = await _authorsApiClient.CreateAuthor(connectionId, apiRequest);
-            return Created(nameof(GetAuthor), new { id });
+
+            AuthorResult createdAuthor = new AuthorResult { Id = (int)id.Value, Name = req.Name };
+            return CreatedAtAction(nameof(GetAuthor), new { id = createdAuthor.Id }, createdAuthor);
         }
+
 
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]

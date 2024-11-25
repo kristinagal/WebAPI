@@ -6,6 +6,7 @@ namespace P099_File.Services
     public class ApplicationDbContext : DbContext
     {
         public DbSet<ChangeRecord> ChangeRecords { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

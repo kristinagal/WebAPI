@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using P099_File.Dtos;
 using P099_File.Models;
 using P099_File.Services;
@@ -19,6 +20,7 @@ namespace P099_File.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult<IEnumerable<ChangeRecordDto>> GetAllChanges()
         // GET: grąžina visus stebimus pakeitimus (naudoti uzklausos DTO)
         {
